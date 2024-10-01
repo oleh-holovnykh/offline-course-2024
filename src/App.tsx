@@ -66,12 +66,14 @@ function App() {
         <div className='text-center mb-2'>
           <div className='mb-2'>
             <b>Модуль:</b>
-            <br />
-            €150 = {Math.round(150 * euroRate!.rateSell)} грн
+            <br/>
+            до 11/10: €140 = {Math.round(140 * euroRate!.rateSell)} грн
+            <br/>
+            з 12/10: €160 = {Math.round(160 * euroRate!.rateSell)} грн
           </div>
-          <div className='mb-2'>
+          {/* <div className='mb-2'>
             <b>Група практики:</b> 600 грн 
-          </div>
+          </div> */}
           <div className='mb-2'>
 
           <NavLink to="/payment" className={getLinkClass}>

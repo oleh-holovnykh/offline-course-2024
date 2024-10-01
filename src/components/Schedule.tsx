@@ -37,13 +37,16 @@ export const Schedule: React.FC<Props> = ({ modules, practices, retreats }) => {
             groupTitle = `"${groupTitle.trimStart()}"`
           }
           
-          return <div key={i} className='whitespace-normal'>
+          if (group.type === 'module') {
+            return <div key={i} className='whitespace-normal'>
             <b>{`${dateStr}`}</b>
             {'module' in group && ` Модуль ${group.module} `}
             {'module' in group && <br/>}
             {groupTitle}
-            {('class' in group && group.class % 2 === 0 || group.type === 'retreat') && <><br />{'\u00a0'}</>}
+            {('class' in group && group.class % 2 === 0) && <><br />{'\u00a0'}</>}
+            <br/><br/>
           </div>
+          }
         })
         }
       </div>

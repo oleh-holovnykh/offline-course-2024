@@ -63,12 +63,18 @@ export const OnlineCourse: React.FC = () => {
         <div className='text-center mb-2'>
           <div className='mb-2'>
             <b>Модуль:</b>
-            <br />
-            €150 = {Math.round(150 * euroRate!.rateSell)} грн
+            <br/>
+            До 11.10
+            <br/>
+            €140 = {Math.round(140 * euroRate!.rateSell)} грн
+            <br/>
+            Після 11.10
+            <br/>
+            €160 = {Math.round(160 * euroRate!.rateSell)} грн
           </div>
-          <div className='mb-2'>
+          {/* <div className='mb-2'>
             <b>Група практики:</b> 600 грн 
-          </div>
+          </div> */}
           <div className='mb-2'>
             <button
               onClick={handleRequisitesClick}

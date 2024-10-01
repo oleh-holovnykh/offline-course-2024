@@ -1,6 +1,6 @@
 import React from 'react'
 import { CopyButton } from '../CopyButton';
-import ie from '../../data/VladIE.json';
+import ie from '../../data/individualEntrepreneur.json';
 import { createSchedule } from '../../helpers/сreateSchedule';
 import modules from '../../data/onlineModuleSchedule.json';
 import practices from '../../data/onlinePracticeSchedule.json';
@@ -37,11 +37,11 @@ const Requisites: React.FC = () => {
     <br />
     🔥Важливо, щоб платіж був від фізособи.
     <br />А не від ФОП, чи організації
-    <br/>
+    {/* <br/>
     <br/>
     <p className="bg-yellow-100 p-2 inline-block">За групу практики</p>
     <br/>
-    5363 5421 0223 6842 <CopyButton value={'5363542102236842'} />
+    5363 5421 0223 6842 <CopyButton value={'5363542102236842'} /> */}
   </div>
   )
 }
