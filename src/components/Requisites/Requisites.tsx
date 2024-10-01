@@ -15,6 +15,12 @@ const Requisites: React.FC = () => {
     <div className='text-left w-max mt-2 mx-auto text-gray-600'>
     <p className="bg-yellow-100 p-2 inline-block">За модуль</p>
     <br/>
+    ВАЖЛИВО:
+    <br/>
+    - Сплата тільки с приватної картки від приватної особи!
+    <br/>
+    - ПРАВИЛЬНО ВКАЗАТИ  ПРИЗНАЧЕННЯ ПЛАТЕЖУ!
+    <br/><br/>
     {ie.recipient} <CopyButton value={ie.recipient} />
     <br />
     IBAN: {ie.iban} <CopyButton value={ie.iban} />
@@ -31,12 +37,6 @@ const Requisites: React.FC = () => {
     🔸Призначення платежу:
     <br />
     {`"За навчання ${nextGrupDateToPrint}"`} <CopyButton value={`За навчання ${nextGrupDateToPrint}`} /> 
-    <br />
-    <br />
-    🔥Важливо вказати призначення платежу
-    <br />
-    🔥Важливо, щоб платіж був від фізособи.
-    <br />А не від ФОП, чи організації
     {/* <br/>
     <br/>
     <p className="bg-yellow-100 p-2 inline-block">За групу практики</p>
