@@ -20,6 +20,8 @@ const Requisites: React.FC = () => {
     - Сплата тільки с приватної картки від приватної особи!
     <br/>
     - ПРАВИЛЬНО ВКАЗАТИ  ПРИЗНАЧЕННЯ ПЛАТЕЖУ!
+    <br/>
+    - Після оплати пришліть, будь ласка, скріншот квитанції 
     <br/><br/>
     {ie.recipient} <CopyButton value={ie.recipient} />
     <br />
@@ -33,15 +35,13 @@ const Requisites: React.FC = () => {
     <br />
     ОКПО Банку: {ie.okpo} <CopyButton value={ie.okpo} />
     <br />
-    <br />
     🔸Призначення платежу:
-    <br />
     {`"За навчання ${nextGrupDateToPrint}"`} <CopyButton value={`За навчання ${nextGrupDateToPrint}`} /> 
-    {/* <br/>
+    <br/>
     <br/>
     <p className="bg-yellow-100 p-2 inline-block">За групу практики</p>
     <br/>
-    5363 5421 0223 6842 <CopyButton value={'5363542102236842'} /> */}
+    5363 5421 0223 6842 <CopyButton value={'5363542102236842'} />
   </div>
   )
 }

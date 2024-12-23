@@ -11,6 +11,7 @@ interface Props {
 export const Schedule: React.FC<Props> = ({ modules, practices, retreats }) => {
   const groups = createSchedule(modules, practices, retreats);
   
+  console.log('111',groups);
   return <div>
     <div className='flex justify-center items-center'>
       <div className='w-[350px] text-gray-600'>
@@ -37,16 +38,13 @@ export const Schedule: React.FC<Props> = ({ modules, practices, retreats }) => {
             groupTitle = `"${groupTitle.trimStart()}"`
           }
           
-          if (group.type === 'module') {
-            return <div key={i} className='whitespace-normal'>
+          return <div key={i} className='whitespace-normal'>
             <b>{`${dateStr}`}</b>
             {'module' in group && ` Модуль ${group.module} `}
             {'module' in group && <br/>}
             {groupTitle}
-            {('class' in group && group.class % 2 === 0) && <><br />{'\u00a0'}</>}
-            <br/><br/>
+            {('class' in group && group.class % 2 === 0 || group.type === 'retreat') && <><br />{'\u00a0'}</>}
           </div>
-          }
         })
         }
       </div>

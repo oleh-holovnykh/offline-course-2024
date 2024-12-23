@@ -67,16 +67,14 @@ function App() {
           <div className='mb-2'>
             <b>Модуль:</b>
             <br/>
-            до 11/10: €140 = {Math.round(140 * euroRate!.rateSell)} грн
-            <br/>
-            з 12/10: €160 = {Math.round(160 * euroRate!.rateSell)} грн
+            €150 = {Math.round(150 * euroRate!.rateSell)} грн
           </div>
-          {/* <div className='mb-2'>
-            <b>Група практики:</b> 600 грн 
-          </div> */}
+          <div className='mb-2'>
+            <b>Група практики:</b> 800 грн 
+          </div>
           <div className='mb-2'>
 
-          <NavLink to="/payment" className={getLinkClass}>
+          {/* <NavLink to="/payment" className={getLinkClass}>
             <button
                 onClick={handleRequisitesClick}
                 className={`mr-2 text-sm text-gray-800 py-2 px-4 border border-gray-200 rounded ${
@@ -90,13 +88,14 @@ function App() {
           <NavLink to="/schedule" className={getLinkClass}>
             <button
                 onClick={handleScheduleClick}
+                disabled={true}
                 className={`text-sm text-gray-800 py-2 px-4 border border-gray-200 rounded ${
                   showSchedule ?  'hover:bg-white bg-gray-100' : 'bg-white hover:bg-gray-100 shadow'
                 }`}
               >
                 Розклад
             </button>
-          </NavLink>
+          </NavLink> */}
         </div>
         </div>
         <Outlet />
