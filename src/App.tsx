@@ -60,7 +60,7 @@ function App() {
 
     return (
       <>
-        <div className='mb-2 bg-slate-800 text-white flex justify-center items-center'>
+        <div className='mb-2 bg-slate-800 text-white flex justify-center items-center' >
           <CurrencyData euroData={euroRate} />
         </div>
         <div className='text-center mb-2'>

@@ -12,7 +12,7 @@ const Requisites: React.FC = () => {
   const nextGrupDateToPrint = `${nextGropuDate.getDate().toString().padStart(2, '0')}.${(nextGropuDate.getMonth() + 1).toString().padStart(2, '0')}`
 
   return (
-    <div className='text-left w-max mt-2 mx-auto px-4 text-gray-600'>
+    <div className='text-left w-max mt-2 mx-auto px-4 text-gray-600' style={{ width: '100vw', maxWidth:'450px', wordWrap: 'break-word' }}>
     <p className="bg-yellow-100 p-2 inline-block">За модуль</p>
     <br/>
     ВАЖЛИВО:
@@ -29,14 +29,14 @@ const Requisites: React.FC = () => {
     <br />
     ІПН/ЄДРПОУ: {ie.id} <CopyButton value={ie.id} />
     <br />
-    Акціонерне товариство: {ie.bank} <CopyButton value={ie.bank} />
+    Акціонерне товариство: {ie.bank}
     <br />
     МФО: {ie.mfo} <CopyButton value={ie.mfo} />
     <br />
     ОКПО Банку: {ie.okpo} <CopyButton value={ie.okpo} />
     <br />
     🔸Призначення платежу:
-    {`"За навчання ${nextGrupDateToPrint}"`} <CopyButton value={`За навчання ${nextGrupDateToPrint}`} /> 
+    {` "За навчання ${nextGrupDateToPrint}"`} <CopyButton value={`За навчання ${nextGrupDateToPrint}`} /> 
     <br/>
     <br/>
     <p className="bg-yellow-100 p-2 inline-block">За групу практики</p>

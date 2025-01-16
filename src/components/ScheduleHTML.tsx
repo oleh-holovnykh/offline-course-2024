@@ -2,7 +2,7 @@ import React from "react";
 
 export const ScheduleHTML: React.FC = () => {
   return (
-    <div className="text-left w-max mt-2 px-4 mx-auto text-gray-600" style={{ width: '450px', wordWrap: 'break-word' }}>
+    <div className="text-left w-max mt-2 px-4 mx-auto text-gray-600" style={{ width: '100vw', maxWidth:'450px', wordWrap: 'break-word' }}>
       <div>
         <b>🗓️ 13-15.01 Модуль 2: Дитячо-батьківські відносини</b>
         <div className='ml-4'>
@@ -20,9 +20,9 @@ export const ScheduleHTML: React.FC = () => {
       <div className="mt-6">
         <b>🗓️ 28-30.04 Модуль 4: Розстановки хвороб та симптомів. (виїздний в Трипіллі)</b>
         <div className='text-gray-500 italic'>
-          <p><span className='underline'>Вартість модуля:</span> €150</p>
-          <p><span className='underline'>Проживання (за 3 дні для однієї людини):</span> 1500 (готель 2-х) / 1300 (готель 3-х) / 1200 (новий корпус 2-х) / 900 (хостел)</p>
-          <p><span className='underline'>Харчування:</span> 1900</p>
+          <p><span className='underline'>Вартість модуля</span>: €150</p>
+          <p><span className='underline'>Проживання (за 3 дні для однієї людини)</span>: 1500 (готель 2-х) / 1300 (готель 3-х) / 1200 (новий корпус 2-х) / 900 (хостел)</p>
+          <p><span className='underline'>Харчування</span>: 1900</p>
         </div>
         <p className='ml-4 mt-2'>вечірня група: 13.05, 27.05</p>
         <p className='ml-4'>ранкова група: 14.05, 28.05</p>
@@ -37,11 +37,11 @@ export const ScheduleHTML: React.FC = () => {
       <div className="mt-6">
         <b>🗓️ 01-08.08 Інтенсив Awareness</b>
           <div className='text-gray-500 italic'>
-            <p className='underline'>Вартість участі при передплаті (€50):</p>
+            <p> <span className='underline'>Вартість участі при передплаті (€50)</span>:</p>
             <p className='ml-4'>до 1 червня — €250</p>
             <p className='ml-4'>до 1 серпня — €300</p>
-            <p><span className='underline'>Проживання (за 8 днів для однієї людини):</span> 5250(готель 2-х); 4550(готель 3-х); 4200(новий корпус 2-х); 3850(будинок рибалки 2-х, 4-х); 3150(хостел)</p>
-            <p><span className='underline'>Харчування:</span> 6650</p>
+            <p><span className='underline'>Проживання (за 8 днів для однієї людини)</span>: 5250 (готель 2-х) / 4550 (готель 3-х) / 4200(новий корпус 2-х) / 3850(будинок рибалки 2-х, 4-х) / 3150(хостел)</p>
+            <p><span className='underline'>Харчування</span>: 6650</p>
           </div>
         
       </div>
