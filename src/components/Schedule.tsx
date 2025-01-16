@@ -11,7 +11,6 @@ interface Props {
 export const Schedule: React.FC<Props> = ({ modules, practices, retreats }) => {
   const groups = createSchedule(modules, practices, retreats);
   
-  console.log('111',groups);
   return <div>
     <div className='flex justify-center items-center'>
       <div className='w-[350px] text-gray-600'>

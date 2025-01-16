@@ -72,7 +72,7 @@ function App() {
           <div className='mb-2'>
             <b>Група практики:</b> 800 грн 
           </div>
-          {/* <div className='mb-2 opacity-0'>
+          <div className='mb-2'>
           <NavLink to="/payment" className={getLinkClass}>
             <button
                 onClick={handleRequisitesClick}
@@ -87,31 +87,9 @@ function App() {
           <NavLink to="/schedule" className={getLinkClass}>
             <button
                 onClick={handleScheduleClick}
-                disabled={true}
                 className={`text-sm text-gray-800 py-2 px-4 border border-gray-200 rounded ${
                   showSchedule ?  'hover:bg-white bg-gray-100' : 'bg-white hover:bg-gray-100 shadow'
                 }`}
-              >
-                Розклад
-            </button>
-          </NavLink>
-        </div> */}
-        <div className='mb-2 opacity-0'>
-          <NavLink to="/payment" className={getLinkClass}>
-            <button
-                onClick={handleRequisitesClick}
-                className="h-1 w-1 p-0 text-transparent border-none cursor-default"
-      disabled
-              >
-                Реквізити
-            </button>
-          </NavLink>
-            
-          <NavLink to="/schedule" className={getLinkClass}>
-            <button
-                onClick={handleScheduleClick}
-                className="h-1 w-1 p-0 text-transparent border-none cursor-default"
-      disabled
               >
                 Розклад
             </button>

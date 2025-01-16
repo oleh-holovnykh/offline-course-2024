@@ -12,7 +12,7 @@ const Requisites: React.FC = () => {
   const nextGrupDateToPrint = `${nextGropuDate.getDate().toString().padStart(2, '0')}.${(nextGropuDate.getMonth() + 1).toString().padStart(2, '0')}`
 
   return (
-    <div className='text-left w-max mt-2 mx-auto text-gray-600'>
+    <div className='text-left w-max mt-2 mx-auto px-4 text-gray-600'>
     <p className="bg-yellow-100 p-2 inline-block">За модуль</p>
     <br/>
     ВАЖЛИВО:
