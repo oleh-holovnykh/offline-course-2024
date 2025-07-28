@@ -37,9 +37,9 @@ export const ScheduleHTML: React.FC = () => {
       <div className="mt-6">
         <b>🗓️ 01-08.08 Інтенсив Awareness</b>
           <div className='text-gray-500 italic'>
-            <p> <span className='underline'>Вартість участі при передплаті (€50)</span>:</p>
+            <p> <span className='underline'>Вартість участі при передплаті</span>:</p>
             <p className='ml-4'>до 1 червня — €250</p>
-            <p className='ml-4'>до 1 серпня — €300</p>
+            <p className='ml-4'>з 2 червня до 1 серпня — €300</p>
             <p><span className='underline'>Проживання (за 8 днів для однієї людини)</span>: 5600 (готель 2-х) / 4410 (готель 3-х) / 4200(новий корпус 2-х) / 3850(будинок рибалки 2-х, 4-х) / 3150(хостел)</p>
             <p><span className='underline'>Харчування</span>: 6650</p>
           </div>
